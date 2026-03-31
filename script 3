@@ -1,0 +1,38 @@
+#!/bin/bash
+# Script 3: Disk and Permission Auditor
+# Author: Ayan Tandon
+
+DIRS=("/etc" "/var" "/home" "/usr" "/tmp")
+
+echo "======================================="
+echo " DISK AND PERMISSION AUDITOR "
+echo "======================================="
+
+for DIR in "${DIRS[@]}"
+do
+    if [ -d "$DIR" ]
+    then
+        PERMS=$(ls -ld $DIR | awk '{print $1, $3, $4}')
+        SIZE=$(du -sh $DIR 2>/dev/null | cut -f1)
+
+        echo "Directory: $DIR"
+        echo "Permissions: $PERMS"
+        echo "Size: $SIZE"
+        echo "---------------------------------------"
+    else
+        echo "$DIR does not exist"
+    fi
+done
+
+echo ""
+echo "Checking Python configuration directory"
+echo "---------------------------------------"
+
+CONFIG="/usr/bin"
+
+if [ -d "$CONFIG" ]
+then
+    ls -ld $CONFIG
+else
+    echo "Python directory not found"
+fi
