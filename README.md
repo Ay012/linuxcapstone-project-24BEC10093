@@ -57,18 +57,7 @@ Concepts used: read, variables, file writing, date command, output redirection
 
 All scripts are written in bash and designed for Linux environments.
 
-Required tools:
-
-Tool	Purpose
-bash	Run scripts
-python	Target software
-grep	Text search
-awk	Text processing
-du	Disk usage
-tail	Log analysis
-
 To install Python:
-
 sudo apt update
 sudo apt install python3
 
