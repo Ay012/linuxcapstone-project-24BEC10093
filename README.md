@@ -77,23 +77,18 @@ chmod +x script5.sh
 Step 3 — Run scripts
 
 Script 1:
-
 ./script1.sh
 
 Script 2:
-
 ./script2.sh
 
 Script 3:
-
 ./script3.sh
 
-Script 4:
-
-./script4.sh test.log
+Script 4
+./script4.sh
 
 Script 5:
-
 ./script5.sh
 
 >> Notes
