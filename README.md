@@ -9,19 +9,8 @@ Chosen Software: Python (Python Software Foundation License)
 >> About This Project
 
 This repository is the submission for the Open Source Audit capstone project. The project involves a structured audit of Python, one of the most widely used open-source programming languages, covering its origin story, license, Linux footprint, FOSS ecosystem, and comparison with proprietary alternatives.
-
 The repository also contains five shell scripts demonstrating practical Linux and bash scripting skills aligned with course concepts.
 
->> Repository Structure
-oss-audit-24BEC10093/
-│
-├── script1.sh       # System Identity Report
-├── script2.sh       # FOSS Package Inspector
-├── script3.sh       # Disk and Permission Auditor
-├── script4.sh       # Log File Analyzer
-├── script5.sh       # Open Source Manifesto Generator
-│
-└── README.md
 >> Script Descriptions
 Script 1 — System Identity Report
 
